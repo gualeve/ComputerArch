@@ -120,6 +120,7 @@ int main()
     return 0;
 }
 
+
 /* retorna o segundo atual desde 1/1/1970,
  * com precisão de nanosegundos
 */
