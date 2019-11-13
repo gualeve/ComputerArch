@@ -1,4 +1,4 @@
-# ArqComp
+# ComputerArch
 
 Códigos de auxílio a arquitetura de computadores
 

@@ -115,7 +115,7 @@ int main()
         diferenca = now;
     }
     printf("\npara plotar o gráfico, verifique se gnuplot está instalado e execute:\n\n");
-    printf("$ gnuplot -p -e \"plot 'saida.dat' using 1:2\"\n");
+    printf("$ gnuplot -p -e \"plot 'saida.dat' using 1:2 w lp ls 7\"\n");
     printf("\nou carregue o arquivo 'saida.dat' em uma planilha e gere o gráfico manualmente.");
     return 0;
 }
