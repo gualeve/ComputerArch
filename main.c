@@ -10,7 +10,7 @@ int main()
     "1: Cache",
     "2: ILP"
   };
-  while ((op = menu(2, opcoes) != 0)) {
+  while ((op = menu(2, opcoes)) != 0) {
       switch (op) {
         case 1:
           cache();
@@ -18,7 +18,6 @@ int main()
         case 2:
           ilp();
           break;
-
         }
 
     }

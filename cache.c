@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <time.h>
 #include "comuns.h"
 
 #define MAX 10000000
@@ -113,6 +112,7 @@ int cache()
         printf("%d parcelas: tempo = %fs (%fs - %f%%)\n", loop, now, diferenca, (now/(now-diferenca)-1)*100);
         diferenca = now;
     }
+    fclose(fd);
     printf("\npara plotar o gráfico, verifique se gnuplot está instalado e execute:\n\n");
     printf("$ gnuplot -p -e \"plot 'saida.dat' using 1:2 w lp ls 7\"\n");
     printf("\nou carregue o arquivo 'saida.dat' em uma planilha e gere o gráfico manualmente.");

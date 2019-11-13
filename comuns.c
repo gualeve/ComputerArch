@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include <time.h>
 #include "comuns.h"
 
 /* retorna o segundo atual desde 1/1/1970,
