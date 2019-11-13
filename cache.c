@@ -9,15 +9,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <time.h>
+#include "comuns.h"
 
 #define MAX 10000000
 #define CHECK 10
 #define DIMVET 64 * 1024
 
 
-double segundo_atual(void);
-
-int main()
+int cache()
 {
     double now, diferenca=0;
     int k;
@@ -121,14 +120,3 @@ int main()
 }
 
 
-/* retorna o segundo atual desde 1/1/1970,
- * com precisão de nanosegundos
-*/
-double segundo_atual(void)
-{
-    double now;
-    struct timespec timenow;
-    clock_gettime(CLOCK_REALTIME, &timenow);
-    now = ((double)((timenow.tv_sec * 1000000000) + (timenow.tv_nsec))) / 1000000000;
-    return now;
-}
