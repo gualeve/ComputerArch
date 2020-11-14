@@ -1,4 +1,4 @@
-/* ILP - Paralelismo em Nível de Instruction
+/* ILP - Paralelismo em Nível de Instrução
  * benchmark de loop unrolling
  * @autor: José Adalberto F. Gualeve
  * (c) 2019-11-12
